@@ -1,0 +1,324 @@
+create database Sistema_mejorado;
+-- creacion y cargue de estudiantes
+use Sistema_mejorado;
+CREATE TABLE Estudiantes (Documento_Estudiante int primary key not null, NombresE varchar(70),Fecha_nacE text,
+GeneroE varchar(1), Grupo_sangineoE varchar(3),DireccionE varchar(100),telefonoE int,Correo_elecE varchar(90), 
+Carrera varchar(50));
+INSERT INTO Estudiantes VALUES (100003418 ,"sebastian cifuentes" , "2003-03-18" , "m" ,  "O+" , "carrera 2b este #90-20sur" , 324483664 ,
+ "Sebastianstivenc@gmail.com" , "ingenieria en sistemas");
+INSERT INTO Estudiantes VALUES (100293011 ,"marcos rodriguez" , "2000-05-28" , "m" ,  "a+" , "carrera 10 #9-50sur" , 313320348 ,
+ "marcosrodriguez@gmail.com" , "ingenieria industrial"); 
+INSERT INTO Estudiantes VALUES (79034213 ,"felipe marin" , "1994-12-18" , "m" ,  "b+" , "diagonal 5# 48-43" , 347288374 ,
+ "felipemari45.com" , "diseño de modas");
+INSERT INTO Estudiantes VALUES (123451344 ,"andres camilo" , "1998-07-2" , "m" ,  "O-" , "avenida carracas #89 -23 sur" , 37389273 ,
+ "andrescamilo@gmail.com" , "ingenieria en sistemas");
+INSERT INTO Estudiantes VALUES (23453566 ,"laura diaz" , "2001-04-12" , "f" ,  "b+" , "calle 2 #30 -45 sur" , 30848293 ,
+ "laura diaz@gmail.com" , "diseño de modas");
+INSERT INTO Estudiantes VALUES (92781782 ,"maria rosario" , "1991-04-5" , "f" ,  "b-" , "diagonal 10 #12 -72" , 373459273 ,
+ "mariarosario@gmail.com" , "ingenieria en sistemas");
+INSERT INTO Estudiantes VALUES (2377622 ,"alba sanchez" , "1993-01-2" , "f" ,  "a+" , "avenida carracas #89 -23 sur" , 323424452 ,
+ "alba sanchez@gmail.com" , "ingenieria industrial");
+INSERT INTO Estudiantes VALUES (91945920 ,"María Valencia","1953-05-11", "f", "o+", "trasversal # 4 carrera 2b este", 339756329,
+ "mariavalencia@gmail.com" , "medicina");
+INSERT INTO Estudiantes VALUES (99003175 ,"franco Álvarez", "1993-2-6", "m", "a+", "calle #6 -2b sur este",305554812 ,
+ "francoalvarez@gmail.com" , "Derecho");
+INSERT INTO Estudiantes VALUES (91005990 ,"patricia Wilches", "1952-09-12", "f",  "a-", "avenida carracas #76-23 sur",322762297
+ ,"patriciawilches@gmail.com", "Derecho");
+INSERT INTO Estudiantes VALUES (146862243 ,"Mauricio Martínez","1987-01-7", "m","o-","avenida carracas #09-78 sur" , 38391028, 
+ "maurimartinez@gmail.com","ingeniería civil");
+INSERT INTO Estudiantes VALUES (9202076 ,"alba Villanueva","1977-10-11" , "f","a+" ,"avenida carracas #89 -23 sur", 309428452 ,
+ "albavillanueva@gmail.com","ingeniería informatica");
+INSERT INTO Estudiantes VALUES (4762917 ,"Valentina puentes","1984-11-4", "f","a+" , "avenida carracas #89 -23 sur", 377424452 ,
+ "valepuentes@gmail.com" , "derecho");
+INSERT INTO Estudiantes VALUES (7618973 ,"jeyson peña" ,"1963-08-12", "m","o+" , "calle #89 -23 sur este", 323424476 ,
+ "Jeysonpeña@gmail.com","ingeneria química");
+INSERT INTO Estudiantes VALUES (1092837 ,"antonio colorado", "1993-3-7", "m","a+", "avenida #76- 09 occidente", 312618952 ,
+ "antoniocolorado@gmail.com" , "marketing digital");
+INSERT INTO Estudiantes VALUES (6159273 ,"Jhuged Alfonso", "1963-09-5", "m", "o+", "avenida #89 -23 Oriente" , 327168023 ,
+ "jhugedalfonso@gmail.com" , "Derecho");
+INSERT INTO Estudiantes VALUES (20091837 , "Brisnyy Espitia" , "1966-2-8" , "f","a+" , "calle #19 -43 sur este", 345671890 ,
+ "brisnyyespitia@gmail.com" , "arquitectura");
+INSERT INTO Estudiantes VALUES ( 61578932 ,"brandon morales" , "1993-09-2","m","a+" , "avenida #20 -23 sur", 381710837,
+ "brandomorales@gmail.com" , "enfermeria");
+INSERT INTO Estudiantes VALUES (8677622 ,"Brayan Gil", "1988-8-3" , "m" ,"a+" , "avenida #24-78" , 320317632 ,
+ "brayangil@gmail.com" , "administracion de empresas");
+INSERT INTO Estudiantes VALUES (88947283 ,"Camilo Ordóñez" , "1953-9-9" , "m" ,  "o+" , "avenida  #19 -43 este" , 348108272 ,
+ "camiloordonéz@gmail.com" , "ingenieria en sistemas");
+INSERT INTO Estudiantes VALUES (95454652 ," Ricardo Useche" , "1993-2-10" , "m" ,  "a+" , "calle #17-23 sur" , 381928281 ,
+ "usechericardo@gmail.com" , "derecho");
+ 
+ -- creacion y cargue de Profesores
+CREATE TABLE Profesores (Documento_maestro int primary key not null, NombresP varchar(70),Fecha_nacP datetime,
+GeneroP varchar(1), Grupo_sangineoP varchar(3),DireccionP varchar(100),telefonoP int,Correo_elecP varchar(90));
+INSERT INTO Profesores VALUES (123456789 ,"hector soto" , "1978-09-22" , "m" ,  "o+" , "calle 80 norte #21 -46" , 323456473 ,
+ "hectorSoto@gmail.com" );
+ INSERT INTO Profesores VALUES (76893762 ,"maria fernandez" , "1965-12-7" , "f" ,  "a+" , "calle 105 este #78 -16" , 320434573 ,
+ "mariafernandez@gmail.com" ); 
+ INSERT INTO Profesores VALUES (94534244 ,"carla lopez" , "1988-10-1" , "f" ,  "o+" , "carrera 20 norte #23 -41sur" , 323456471 ,
+ "carlalopez@gmail.com" );
+ INSERT INTO Profesores VALUES (72341141 ,"Flor alvarez" , "1975-10-1" , "f" ,  "o+" , "calle 93 sur # 84 - 48 este" , 323746243 ,
+ "floralvarez@gmail.com" );
+ INSERT INTO Profesores VALUES (98264815 ,"tomas vanegas" ,"1993-06-17" ,"m" ,"ab+" ,"carrera 40 este #3 -61sur" , 313443645 ,
+ "tomasvanegas@gmail.com" );
+ INSERT INTO Profesores VALUES (88423815 ,"maria torres" , "1979-01-11" , "f" ,  "b+" , "carrera 32 bis #90 -15",312645241 ,
+ "mariastorres@gmail.com" );
+ INSERT INTO Profesores VALUES (70234534 ,"yeray duarte", "1981-07-27" , "m" , "a-" ,"diagonal 40 #104 -90" ,311345692 ,
+ "yerayduarte@gmail.com" );
+ INSERT INTO Profesores VALUES (94562675 ,"marco solis" , "1969-11-30" , "m" , "o-" ,"calle 64 bis #27 -74 este", 345692746 ,
+ "marcosolis@gmail.com" );
+ INSERT INTO Profesores VALUES (85934534 ,"paco perez" , "1991-01-1" , "m" ,  "ab-" , "diagonal 47 #78 -61" ,316694692 ,
+ "pacoperez@gmail.com" );
+ 
+ -- creacion y cargue de asignaturas
+CREATE TABLE Asignaturas (Codigo_Asignatura int primary key not null, Nombre_asignatura varchar(70)not null,
+ semestre int not null, salon varchar(2) not null, Documento_maestros int not null); 
+ ALTER TABLE Asignaturas add CONSTRAINT Documento_maestros FOREIGN KEY (Documento_maestros) REFERENCES Profesores
+ (Documento_maestro) ON DELETE CASCADE ON UPDATE CASCADE; 
+ INSERT INTO Asignaturas VALUES (101,"fundamentos matemáticos",1, "A1", 85934534 );
+ INSERT INTO Asignaturas VALUES (102,"base de datos",2,"A2",123456789);
+INSERT INTO Asignaturas VALUES (103,"programacion pc",2, "A3",123456789);
+INSERT INTO Asignaturas VALUES (104,"fundamentos medicina",3, "A4",70234534);
+INSERT INTO Asignaturas VALUES (105,"economia",2, "A5",76893762); 
+INSERT INTO Asignaturas VALUES (106,"estadistica",1, "A6",85934534); 
+INSERT INTO Asignaturas VALUES (107,"arquitectura pc",1,"A7",85934534); 
+INSERT INTO Asignaturas VALUES (108,"pice",3, "A8",88423815); 
+INSERT INTO Asignaturas VALUES (109,"introduccion a la administracion",1, "A9",94534244); 
+INSERT INTO Asignaturas VALUES (110,"derecho administractivo general",3, "B1",94562675); 
+INSERT INTO Asignaturas VALUES (111,"ingles",3, "B2",98264815);
+INSERT INTO Asignaturas VALUES (112,"electiva",4,"B3",70234534);
+INSERT INTO Asignaturas VALUES (113,"etica profesional",4, "B4",98264815);
+INSERT INTO Asignaturas VALUES (114,"calculo",4, "B5",85934534);
+
+-- creacion y cargue de notas
+CREATE TABLE Notas (Documento_Estudiantes int not null, Codigo_Asignaturas int not null, Nota_corte1 Float,
+Nota_corte2 Float,Nota_corte3 Float );
+ ALTER TABLE Notas add CONSTRAINT Documento_Estudiantes FOREIGN KEY (Documento_Estudiantes) REFERENCES Estudiantes
+ (Documento_Estudiante) ON DELETE CASCADE ON UPDATE CASCADE; 
+ ALTER TABLE Notas add CONSTRAINT Codigo_Asignaturas FOREIGN KEY (Codigo_Asignaturas) REFERENCES Asignaturas
+ (Codigo_Asignatura) ON DELETE CASCADE ON UPDATE CASCADE; 
+
+INSERT INTO Notas VALUES (100003418 ,101, 4.5, 3.4, 4.9 );
+INSERT INTO Notas VALUES (100003418 ,102, 4.8, 4.4, 4.9 );
+ INSERT INTO Notas VALUES (100003418 ,108, 4.9, 2.4, 4.0 );
+
+ INSERT INTO Notas VALUES (146862243 ,109, 2.9, 2.4, 5.0 );
+ INSERT INTO Notas VALUES (146862243 ,108, 3.5, 4.4, 2.0 );
+ INSERT INTO Notas VALUES (146862243 ,105, 2.9, 4, 4.2 );
+ 
+ INSERT INTO Notas VALUES (123451344 ,106, 3.9, 4, 3.0 );
+ INSERT INTO Notas VALUES (123451344 ,109, 4.5, 1.4, 2.9);
+ INSERT INTO Notas VALUES (123451344 ,105, 3.5, 4, 4 );
+ 
+ INSERT INTO Notas VALUES (99003175 ,105, 4.2, 4.5, 3.9 );
+ INSERT INTO Notas VALUES (99003175 ,109, 4.5, 5, 5);
+ INSERT INTO Notas VALUES (99003175 ,110, 3.5, 4.7, 4.1 );
+ 
+ INSERT INTO Notas VALUES (92781782 ,105, 2, 5, 3.9 );
+ INSERT INTO Notas VALUES (92781782 ,109, 3.6, 2.9, 3.5);
+ INSERT INTO Notas VALUES (92781782 ,110, 1.5, 4.7, 3.6 );
+
+ INSERT INTO Notas VALUES (91945920 ,104, 4, 3.5, 3.6 );
+ INSERT INTO Notas VALUES (91945920 ,107, 4.5, 4.9, 5);
+ INSERT INTO Notas VALUES (91945920 ,113, 3, 3.7, 3.1 ); 
+
+ INSERT INTO Notas VALUES (91005990 ,101, 2.8, 1, 1 );
+ INSERT INTO Notas VALUES (91005990 ,114, 3.9, 1, 1);
+ INSERT INTO Notas VALUES (91005990 ,106, 3.5, 1, 1 );
+ 
+ INSERT INTO Notas VALUES (88947283 ,102, 4.2, 4.1, 4.7 );
+ INSERT INTO Notas VALUES (88947283 ,103, 3.9, 5, 4);
+ INSERT INTO Notas VALUES (88947283 ,108, 5, 4,4.5); 
+ 
+ INSERT INTO Notas VALUES (8677622,105, 4.7, 3.2, 3.7 );
+INSERT INTO Notas VALUES (8677622,103, 4.5, 4.2, 3.0);
+INSERT INTO Notas VALUES (8677622,110, 3.2, 3.0, 4.2);
+
+
+INSERT INTO Notas VALUES (7618973 ,112, 4.6, 4.2, 5);
+INSERT INTO Notas VALUES (7618973 ,110, 3.6, 4.7, 4.3);
+INSERT INTO Notas VALUES (7618973 ,114, 4.7, 5, 4.9);
+
+
+INSERT INTO Notas VALUES (6159273 ,101, 3.5, 4.9, 4.4 );
+INSERT INTO Notas VALUES (6159273 ,108, 3.0, 3.9, 5);
+INSERT INTO Notas VALUES (6159273 ,106, 3.9, 3.6, 4.3 );
+
+
+ INSERT INTO Notas VALUES (4762917 ,111, 4.9, 5, 4.5);
+INSERT INTO Notas VALUES (4762917 ,113, 4.7, 4.9, 4.9);
+INSERT INTO Notas VALUES (4762917 ,112, 4.2, 4.6, 4.9);
+
+
+ INSERT INTO Notas VALUES (2377622 ,114, 3.5, 3.7, 4.7 );
+INSERT INTO Notas VALUES (2377622 ,108, 3.7, 3.1, 4.4 );
+INSERT INTO Notas VALUES (2377622 ,110, 3.2, 3.6, 5 );
+
+
+INSERT INTO Notas VALUES (1092837 ,104, 4.8, 4.0, 3.7);
+INSERT INTO Notas VALUES (1092837 ,108, 3.2, 3.0, 4.9);
+INSERT INTO Notas VALUES (1092837 ,114, 3.8, 5, 4.9);
+ 	
+insert INTO Notas VALUES (100293011,104,4.5, 4,3);
+ INSERT INTO Notas VALUES (100293011 ,101, 4, 1, 2.1);
+ INSERT INTO Notas VALUES (100293011,114, 3, 4.7, 4 );
+
+INSERT INTO Notas VALUES (95454652,112, 3, 4.1, 4.8);
+ INSERT INTO Notas VALUES (95454652,110, 4.5, 4.9, 2.6);
+ INSERT INTO Notas VALUES (95454652,109, 3.9, 4.1, 4.2);
+
+
+INSERT INTO Notas VALUES (79034213,102, 3.2, 2.1, 3.8);
+ INSERT INTO Notas VALUES (79034213,107, 4.1, 3.4, 3.6);
+ INSERT INTO Notas VALUES (79034213,106, 3.9, 2.1, 3.2);
+
+
+INSERT INTO Notas VALUES (61578932,112, 3.8, 4.2, 3.1);
+ INSERT INTO Notas VALUES (61578932,104, 3.7, 4.1, 3.9);
+ INSERT INTO Notas VALUES (61578932,103, 4.9, 1.1, 5);
+
+INSERT INTO Notas VALUES (23453566,111, 1, 2, 1);
+ INSERT INTO Notas VALUES (23453566,113, 2.7, 1, 1.9);
+ INSERT INTO Notas VALUES (23453566,108, 1.9, 1.1, 1.5);
+
+
+INSERT INTO Notas VALUES (20091837,104, 4.1, 4.2, 3.1);
+ INSERT INTO Notas VALUES (20091837,105, 3.7, 4.1, 4.9);
+ INSERT INTO Notas VALUES (20091837,101, 3.9, 4.1, 4.5);
+
+
+INSERT INTO Notas VALUES (9202076,103, 2.1, 4.2, 3.9);
+ INSERT INTO Notas VALUES (9202076,113, 3.1, 4.1, 3.9);
+ INSERT INTO Notas VALUES (9202076,110, 3.1, 4.2, 4);
+
+
+INSERT INTO Notas VALUES (8677622,101, 5, 5, 5);
+ INSERT INTO Notas VALUES (8677622,107, 3, 4.4, 4.9);
+ INSERT INTO Notas VALUES (8677622,109, 3.9, 4.2, 4.5);
+
+
+INSERT INTO Notas VALUES (7618973,104, 5,4.5,4.1);
+ INSERT INTO Notas VALUES (7618973,108, 4.3, 4, 3.9);
+ INSERT INTO Notas VALUES (7618973,106, 4.9, 4.6, 4.8);
+
+INSERT INTO Notas VALUES (6159273,114, 3.5,3.5,3.4);
+ INSERT INTO Notas VALUES (6159273,110, 4.4, 4.1, 3.5);
+ INSERT INTO Notas VALUES (6159273,105, 4.3, 4.5, 4);
+
+INSERT INTO Notas VALUES (4762917,107, 5,3.5,4);
+ INSERT INTO Notas VALUES (4762917,112, 4, 1, 3.5);
+ INSERT INTO Notas VALUES (4762917,113, 4, 5, 4.3);
+
+INSERT INTO Notas VALUES (2377622,101, 5,3.2,4);
+ INSERT INTO Notas VALUES (2377622,102, 4, 4.1, 5);
+ INSERT INTO Notas VALUES (2377622,103, 4.1, 5, 4);
+
+INSERT INTO Notas VALUES (1092837,105, 1,1,1);
+ INSERT INTO Notas VALUES (1092837,109, 1, 1,1);
+ INSERT INTO Notas VALUES (1092837,114, 1, 1, 1);
+
+
+
+
+-- creacion y cargue de Inscripcion
+ CREATE TABLE Inscripcion (Documento_del_Estudiante int not null, Codigo_de_Asignatura int not null);
+ ALTER TABLE Inscripcion add CONSTRAINT Documento_del_Estudiante FOREIGN KEY (Documento_del_Estudiante) REFERENCES Estudiantes
+ (Documento_Estudiante) ON DELETE CASCADE ON UPDATE CASCADE; 
+ ALTER TABLE Inscripcion add CONSTRAINT Codigo_de_Asignatura FOREIGN KEY (Codigo_de_Asignatura) REFERENCES Asignaturas
+ (Codigo_Asignatura) ON DELETE CASCADE ON UPDATE CASCADE;
+ 
+INSERT INTO Inscripcion VALUES (100003418 ,101);
+INSERT INTO Inscripcion VALUES (100003418 ,102);
+ INSERT INTO Inscripcion VALUES (100003418 ,108);
+ INSERT INTO Inscripcion VALUES (146862243 ,109);
+ INSERT INTO Inscripcion VALUES (146862243 ,108);
+INSERT INTO Inscripcion VALUES (146862243 ,105);
+ INSERT INTO Inscripcion VALUES (123451344 ,106);
+ INSERT INTO Inscripcion VALUES (123451344 ,109);
+INSERT INTO Inscripcion VALUES (123451344 ,105);
+ INSERT INTO Inscripcion VALUES (99003175 ,105);
+ INSERT INTO Inscripcion VALUES (99003175 ,109);
+ INSERT INTO Inscripcion VALUES (99003175 ,110);
+  INSERT INTO Inscripcion VALUES (92781782 ,105);
+ INSERT INTO Inscripcion VALUES (92781782 ,109);
+ INSERT INTO Inscripcion VALUES (92781782 ,110);
+ INSERT INTO Inscripcion VALUES (91945920 ,104);
+ INSERT INTO Inscripcion VALUES (91945920 ,107);
+ INSERT INTO Inscripcion VALUES (91945920 ,113); 
+ INSERT INTO Inscripcion VALUES (91005990 ,101);
+ INSERT INTO Inscripcion VALUES (91005990 ,114);
+ INSERT INTO Inscripcion VALUES (91005990 ,106);
+ INSERT INTO Inscripcion VALUES (88947283 ,102);
+ INSERT INTO Inscripcion VALUES (88947283 ,103);
+ INSERT INTO Inscripcion VALUES (88947283 ,108); 
+ INSERT INTO Inscripcion VALUES (8677622,105);
+INSERT INTO Inscripcion VALUES (8677622,103);
+INSERT INTO Inscripcion VALUES (8677622,110);
+INSERT INTO Inscripcion VALUES (7618973 ,112);
+INSERT INTO Inscripcion VALUES (7618973 ,110);
+INSERT INTO Inscripcion VALUES (7618973 ,114);
+INSERT INTO Inscripcion VALUES (6159273 ,101);
+INSERT INTO Inscripcion VALUES (6159273 ,108);
+INSERT INTO Inscripcion VALUES (6159273 ,106 );
+ INSERT INTO Inscripcion VALUES (4762917 ,111);
+INSERT INTO Inscripcion VALUES (4762917 ,113);
+INSERT INTO Inscripcion VALUES (4762917 ,112);
+ INSERT INTO Inscripcion VALUES (2377622 ,114);
+INSERT INTO Inscripcion VALUES (2377622 ,108);
+INSERT INTO Inscripcion VALUES (2377622 ,110 );
+INSERT INTO Inscripcion VALUES (1092837 ,104);
+INSERT INTO Inscripcion VALUES (1092837 ,108);
+INSERT INTO Inscripcion VALUES (1092837 ,114);
+insert INTO Inscripcion VALUES (100293011,104);
+ INSERT INTO Inscripcion VALUES (100293011 ,101);
+ INSERT INTO Inscripcion VALUES (100293011,114);
+INSERT INTO Inscripcion VALUES (95454652,112);
+ INSERT INTO Inscripcion VALUES (95454652,110);
+ INSERT INTO Inscripcion VALUES (95454652,109);
+INSERT INTO Inscripcion VALUES (79034213,102);
+ INSERT INTO Inscripcion VALUES (79034213,107);
+ INSERT INTO Inscripcion VALUES (79034213,106);
+INSERT INTO Inscripcion VALUES (61578932,112);
+ INSERT INTO Inscripcion VALUES (61578932,104);
+ INSERT INTO Inscripcion VALUES (61578932,103);
+INSERT INTO Inscripcion VALUES (23453566,111);
+ INSERT INTO Inscripcion VALUES (23453566,113);
+ INSERT INTO Inscripcion VALUES (23453566,108);
+INSERT INTO Inscripcion VALUES (20091837,104);
+ INSERT INTO Inscripcion VALUES (20091837,105);
+ INSERT INTO Inscripcion VALUES (20091837,101);
+INSERT INTO Inscripcion VALUES (9202076,103);
+ INSERT INTO Inscripcion VALUES (9202076,113);
+ INSERT INTO Inscripcion VALUES (9202076,110);
+INSERT INTO Inscripcion VALUES (8677622,101);
+ INSERT INTO Inscripcion VALUES (8677622,107);
+ INSERT INTO Inscripcion VALUES (8677622,109);
+INSERT INTO Inscripcion VALUES (7618973,104);
+ INSERT INTO Inscripcion VALUES (7618973,108);
+ INSERT INTO Inscripcion VALUES (7618973,106);
+INSERT INTO Inscripcion VALUES (6159273,114);
+ INSERT INTO Inscripcion VALUES (6159273,110);
+ INSERT INTO Inscripcion VALUES (6159273,105);
+INSERT INTO Inscripcion VALUES (4762917,107);
+ INSERT INTO Inscripcion VALUES (4762917,112);
+ INSERT INTO Inscripcion VALUES (4762917,113);
+INSERT INTO Inscripcion VALUES (2377622,101);
+ INSERT INTO Inscripcion VALUES (2377622,102);
+ INSERT INTO Inscripcion VALUES (2377622,103);
+INSERT INTO Inscripcion VALUES (1092837,105);
+ INSERT INTO Inscripcion VALUES (1092837,109);
+ INSERT INTO Inscripcion VALUES (1092837,114);
+
+ 
+ 
+ 
+ -- creacion y cargue de Historico
+ CREATE TABLE Historico (Documentos_de_Estudiantes int not null, Codigos_de_Asignaturas int not null,
+ Documentos_de_maestros int not null, Nota_definitiva float not null);
+  ALTER TABLE Historico add CONSTRAINT Documentos_de_Estudiantes FOREIGN KEY (Documentos_de_Estudiantes) REFERENCES Estudiantes
+ (Documento_Estudiante) ON DELETE CASCADE ON UPDATE CASCADE; 
+ ALTER TABLE Historico add CONSTRAINT Codigos_de_Asignaturas FOREIGN KEY (Codigos_de_Asignaturas) REFERENCES Asignaturas
+ (Codigo_Asignatura) ON DELETE CASCADE ON UPDATE CASCADE;
+ ALTER TABLE Historico add CONSTRAINT Documentos_de_maestros FOREIGN KEY (Documentos_de_maestros) REFERENCES Profesores
+ (Documento_maestro) ON DELETE CASCADE ON UPDATE CASCADE; 
+ 
+ 
